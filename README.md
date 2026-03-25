@@ -18,10 +18,26 @@ These packages are built from the [official Ubuntu OpenCV source package](https:
 
 ## Quick Install
 
+### Remove any existing OpenCV library installed
+
+If you have installed OpenCV using the **apt package manager**, you need to remove it before installing the OpenCVA library, because the OpenCVA library provides its own version of OpenCV that is optimized for the RZ/V2H RDK on Ubuntu 24.04.
+
+```bash
+sudo apt remove -y libopencv* opencv* python3-opencv
+```
+
+### Download and run the installation script
+
 ```bash
 wget -qO install_opencv_arm64.sh https://raw.githubusercontent.com/renesas-rdk/rzv2h_opencv_accelerated_debs/main/install_opencv_arm64.sh
 sudo bash install_opencv_arm64.sh
 ```
+
+The script will install all OpenCVA Debian packages, resolve any missing dependencies, and verify the installation automatically.
+
+The installation process may report missing dependencies during the dpkg step. This is expected and will be resolved automatically by the script.
+
+After script execution, the OpenCVA library and its dependencies will be installed on your RZ/V2H RDK, and you can start using it in your computer vision applications.
 
 ## DRP-Accelerated Functions
 
