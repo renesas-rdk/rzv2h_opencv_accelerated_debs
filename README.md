@@ -73,7 +73,7 @@ The following table lists the OpenCV functions that can be executed using DRP in
 | **Base**          | Ubuntu source `opencv 4.6.0+dfsg-13.1ubuntu1`                                                 |
 | **DRP patches**   | [rzv2h_opencv_accelerator](https://github.com/renesas-rz/rzv2h_opencv_accelerator)            |
 | **Version**       | `4.6.0+dfsg-99v2hcva1~13.1ubuntu1`                                                            |
-| **Build**         | Cross-compiled for ARM64                                                                       |
+| **Build**         | Native build on RZ/V2H RDK                                                                     |
 
 ## License
 

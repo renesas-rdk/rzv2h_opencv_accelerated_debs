@@ -8,7 +8,7 @@
 set -e
 
 REPO="renesas-rdk/rzv2h_opencv_accelerated_debs"
-VERSION="v4.6.0"
+VERSION="v4.6.0-2"
 TARBALL="rzv2h_opencv_accelerated_debs.tar.gz"
 URL="https://github.com/$REPO/releases/download/$VERSION/$TARBALL"
 TMPDIR=$(mktemp -d)
